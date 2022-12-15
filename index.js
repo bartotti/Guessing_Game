@@ -47,47 +47,35 @@ function possible_win_number(win_num){
     message_range.innerHTML = temp_num[0] +" " + " "+temp_num[1] + " " + win_num;
 }
 
+function update_color(){
+    if(player_pass_guess[0] <= Number(winning_number))  //12 < 77
+    {
+        dispaly1.style.color = "red"; 
+    }
+    if(player_pass_guess[1] <= Number(winning_number)) 
+    {
+        dispaly2.style.color = "red"; 
+    }
+    if(player_pass_guess[2] <= Number(Number(winning_number))) 
+    {
+        dispaly3.style.color = "red"; 
+    }
+    if(player_pass_guess[3] <= Number(winning_number)) 
+    {
+        dispaly4.style.color = "red"; 
+    }
+    if(player_pass_guess[4] <= Number(winning_number)) 
+    {
+        dispaly5.style.color = "red"; 
+    }
+
+}
 function hint(a){
     a.addEventListener('click', function(){
         possible_win_number(winning_number);
-        console.log(winning_number)
-        if(player_pass_guess[0] < winning_number) 
-        {
-            dispaly1.style.color = "red"; 
-        }
-        else{
-            dispaly1.style.color = "blue";
-        }
-        if(player_pass_guess[1] < winning_number) 
-        {
-            dispaly2.style.color = "red"; 
-        }
-        else{
-            dispaly2.style.color = "blue";
-        }
-        if(player_pass_guess[2] < winning_number) 
-        {
-            dispaly3.style.color = "red"; 
-        }
-        else{
-            dispaly3.style.color = "blue";
-        }
-        if(player_pass_guess[3] < winning_number) 
-        {
-            dispaly4.style.color = "red"; 
-        }
-        else{
-            dispaly4.style.color = "blue";
-        }
-        if(player_pass_guess[4] < winning_number) 
-        {
-            dispaly5.style.color = "red"; 
-        }
-        else{
-            dispaly5.style.color = "blue";
-        }
+        //console.log(winning_number)
 
-    });
+    },{once : true});
 }
 
 //function call for the hint button to work 
@@ -190,7 +178,7 @@ guess_btn.addEventListener('click', function(){
         alert("you lose");
         reset_game_after_won()
     }
-    
+    update_color();
     // dispaly1.innerHTML = input_box
     // console.log(typeof dispaly4.innerHTML)
     //guess logic and dispaly it to the html by innerHTML 
