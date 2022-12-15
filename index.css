@@ -4,40 +4,156 @@
     box-sizing: border-box;
 }
 body {
-    width: 500px;
+    width: 100%;
     height: 500px;
-    background-image: url(img/backimg.jpg);
+    background-image: url("backimg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 h3{
     padding-left: 8px;
 }
+
+h1, h2 {
+text-align: center;
+font-family: 'bradley hand', cursive;
+}
+
+h2 {
+    margin-top: 5.5em;
+    font-style: italic;
+}
+
+
 #main-div{
     display: flex;
     padding-left: 20px;
     padding-bottom: 20px;
+    padding-top: 20px;
+    justify-content: center;
 }
+
 #display-1{
-    width: 40px;
+    width: 60px;
     border: solid;
     border-radius: 20px;
+    text-align: center;
+    font-family: 'chalkduster', fantasy;
+    font-size: 20px;
 }
+
 #display-2{
-    width: 40px;
+    width: 60px;
     border: solid;
     border-radius: 20px;
+    text-align: center;
+    font-family: 'chalkduster', fantasy;
+    font-size: 20px;
 }
+
 #display-3{
-    width: 40px;
+    width: 60px;
     border: solid;
     border-radius: 20px;
+    text-align: center;
+    font-family: 'chalkduster', fantasy;
+    font-size: 20px;
 }
+
 #display-4{
-    width: 40px;
+    width: 60px;
     border: solid;
     border-radius: 20px;
+    text-align: center;
+    font-family: 'chalkduster', fantasy;
+    font-size: 20px;
 }
 #display-5{
-    width: 40px;
+    width: 60px;
     border: solid;
     border-radius: 20px;
+    text-align: center;
+    font-family: 'chalkduster', fantasy;
+    font-size: 20px;
 }
+
+#message-output {
+text-align: center;
+margin-top: 2em;
+font-weight: bolder;
+font-size: 25px;
+font-family: 'bradley hand', cursive;
+
+}
+
+#message {
+text-align: center;
+margin: 2em;
+font-weight: bolder;
+font-size: 25px;
+font-family: 'bradley hand', cursive;
+}
+
+#content {
+    text-align: center;
+}
+
+#input-box {
+    text-align: center;
+    border-color: rgb(49, 123, 78);
+    border-style: groove;
+    height: 60px;
+    width: 150px;
+    font-size: larger;
+}
+
+#guess-btn {
+    border-radius: 12px;
+    border-color: rgb(90, 179, 223);
+    border-style: double;
+    background-color: #96b1a8; 
+    font-weight: bolder;
+    color: #e3e4bb;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: crosshair;
+}
+
+#need-a-hint {
+    border-radius: 12px;
+    border-color: rgb(90, 179, 223);
+    border-style: double;
+    background-color: #96b1a8; 
+    font-weight: bolder;
+    color: #e3e4bb;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: crosshair;   
+
+}
+
+#reset-game {
+    border-radius: 12px;
+    border-color: rgb(90, 179, 223);
+    border-style: double;
+    background-color: #96b1a8; 
+    font-weight: bolder;
+    color: #e3e4bb;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: crosshair;
+
+}
+
