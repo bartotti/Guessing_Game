@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    width: 500px;
+    height: 500px;
+    background-image: url(img/backimg.jpg);
+}
+h3{
+    padding-left: 8px;
+}
+#main-div{
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+#display-1{
+    width: 40px;
+    border: solid;
+    border-radius: 20px;
+}
+#display-2{
+    width: 40px;
+    border: solid;
+    border-radius: 20px;
+}
+#display-3{
+    width: 40px;
+    border: solid;
+    border-radius: 20px;
+}
+#display-4{
+    width: 40px;
+    border: solid;
+    border-radius: 20px;
+}
+#display-5{
+    width: 40px;
+    border: solid;
+    border-radius: 20px;
+}
